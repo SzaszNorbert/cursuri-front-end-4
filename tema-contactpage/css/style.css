@@ -1,0 +1,52 @@
+body {
+  margin:0;
+  background:url('../img/forest.jpg') no-repeat top fixed;
+}
+
+.main-content {
+  margin:0 auto;
+  width :800px;
+  border:1px solid black;
+  border-radius:15px;
+  padding:20px;
+  background-color:rgb(240,240,240,0.5);
+}
+
+.main-content:hover {
+  margin:0 auto;
+  width :800px;
+  border:1px solid black;
+  border-radius:15px;
+  padding:20px;
+  background-color:rgb(200,200,200,1);
+}
+
+.content {
+  width:390px;
+}
+
+.pull-left {
+  float:left;
+  width:400px;
+}
+
+.pull-right {
+  float:right;
+}
+
+.image {
+  width:400px;
+  height:300px;
+}
+
+.container{
+  position:relative;
+}
+
+.pos-absolute {
+  position:absolute;
+  left:400px;
+  top:250px;
+  right:400px;
+  
+}

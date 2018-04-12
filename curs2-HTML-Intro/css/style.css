@@ -1,0 +1,26 @@
+body {background-color:grey;}
+			div#mainn {background-color:lightgrey;margin: 0 100px 0 100px;}
+			footer {border:1px solid black;
+				background-color:black;
+				color:white;
+				text-align:center;}
+			div#head {text-align:center;
+				  text-shadow:2px 3px 3px rgb(24,36,48);
+				  border:1px solid black;
+				  background-color:lightblue;}
+			div#navb {float:left;padding:15px;margin:15px;}
+			div#pict {float:left;padding:15px;margin:15px;box-shadow:2px 3px 4px rgb(24,36,48);}
+			div#data {float:left;padding:15px;margin:15px;box-shadow:2px 3px 4px rgb(24,36,48);}
+			div#hobbies {clear:both;padding:10px;margin:10px;box-shadow:2px 3px 4px rgb(24,36,48);}
+			div#goals {padding:10px;margin:10px;box-shadow:2px 3px 4px rgb(24,36,48);}
+			div#blogroll {padding:10px;margin:10px;box-shadow:2px 3px 4px rgb(24,36,48);}
+			div#but {
+					border:1px solid green;
+					background-color:green;
+					text-align:center;
+				}
+				a {text-decoration:none;}
+			ul#navbar {list-style-type:none;
+								margin:0;
+			          padding:0;
+								}

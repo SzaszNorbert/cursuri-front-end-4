@@ -1,0 +1,173 @@
+body {
+  margin:0;
+  background: url('../img/beach.jpg') no-repeat top fixed;
+}
+
+nav {
+  background:linear-gradient(to right , yellow, orange, pink, purple);
+  text-align:center;
+}
+
+#logo {
+  text-shadow:2px 3px 6px black, 2px 3px 6px gray;
+  font-size: 35px;
+  font-family:vtimes new roman;
+  font-style:italic;
+  font-weight:bold;
+}
+
+.margin-auto {
+  margin:0 auto;
+  width:960px;
+}
+
+.links {
+  display:inline-block;
+  background-color:silver;
+  margin: 0 5px 0 5px;
+  border-radius:2px;
+  height:20px;
+  padding:3px;
+}
+
+.pull-left {
+  float:left;
+}
+
+.pull-right {
+  float:right;
+}
+
+.clearfix::after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.back {
+  background:linear-gradient(to bottom right , green, blue, red);
+}
+
+.slider {
+  position:relative;
+  height:150px;
+}
+
+.slider-btn {
+  position:absolute;
+  right:10px;
+  bottom:-10px;
+  background-color:purple;
+  color:lightblue;
+  padding:2px;
+  border-radius:4px;
+}
+
+.text-ind {
+  position:absolute;
+  top:10px;
+  left:10px;
+  background-color:lightblue;
+  width:120px;
+  border-radius:4px;
+  padding:3px;
+}
+
+.artic {
+  width:240px;
+  background:linear-gradient(to right , silver, gray, darkgray, black);
+  border:1px solid lightgreen;
+  border-radius:15px;
+  margin:10px;
+  padding:10px;
+}
+
+.artic-overflow {
+  width:750px;
+  background:linear-gradient(to right , silver, gray, darkgray, black);
+  border:1px solid lightgreen;
+  border-radius:15px;
+  margin:10px;
+  padding:10px;
+  overflow:auto;
+}
+
+.img1 {
+  background:radial-gradient(blue, green);
+  width:200px;
+  height:70px;
+  border:1px solid orange;
+  margin:5px;
+  color:white;
+}
+
+.img2 {
+  background:radial-gradient(lightgreen, darkgreen);
+  width:240px;
+  height:110px;
+  border:1px solid orange;
+  margin:5px;
+  color:white;
+}
+
+.img3 {
+  background:radial-gradient(tomato, red);
+  width:154px;
+  height:85px;
+  border:1px solid orange;
+  margin:10px;
+  color:white;
+}
+
+.boxing {
+  margin:0 15px 0 35px;
+}
+
+.under-line {
+  border-bottom:1px dotted black;
+  width:150px;
+}
+
+a:link {
+  color:blue;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+a:visited {
+  color:purple;
+  text-decoration:none;
+  cursor:pointer;
+}
+a:hover {
+  color:green;
+  text-decoration:none;
+  cursor:pointer;
+  background-color:white;
+  border-radius:2px;
+}
+a:active {
+  color:red;
+  text-decoration:none;
+  cursor;pointer;
+}
+
+header {
+  background:linear-gradient(lightgreen, lightblue);
+}
+
+main {
+  border:1px solid lightgreen;
+  background:linear-gradient(lightgreen, lightblue);
+}
+
+footer {
+  position:fixed;
+  left:0;
+  bottom:0;
+  width:100%;
+  background-color:black;
+  color:white;
+  text-align:center;
+  height:25px;
+}
