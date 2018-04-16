@@ -1,3 +1,5 @@
+
+
 body {
   margin:0;
   background:url('../img/forest.jpg') no-repeat top fixed;
@@ -39,14 +41,15 @@ body {
   height:300px;
 }
 
-.container{
-  position:relative;
-}
-
 .pos-absolute {
   position:absolute;
-  left:400px;
-  top:250px;
-  right:400px;
+  bottom:25%;
+  left:25%;
   
+}
+
+@media screen and (max-width:600px) {
+  body {
+  margin:0;
+  background:url('../img/nature.jpg') no-repeat top fixed;
 }

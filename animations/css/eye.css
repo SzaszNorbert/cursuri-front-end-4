@@ -1,0 +1,31 @@
+.terminatoreye {
+  margin:400px auto;
+  width:250px;
+  height:250px;
+  background:radial-gradient(red 10%,black 40%);
+  border-radius:130px;
+  animation-name:pulse;
+  animation-duration:1.15s;
+  animation-delay:0.7s;
+  animation-iteration-count:infinite;
+  animation-timing-function:ease-in-out;
+}
+
+@keyframes pulse {
+  10% {background:radial-gradient(red 10%,black 40%);}
+  20% {background:radial-gradient(red 20%,black 50%);}
+  30% {background:radial-gradient(red 30%,black 60%);}
+  40% {background:radial-gradient(red 40%,black 70%);}
+  50% {background:radial-gradient(red 30%,black 60%);}
+  60% {background:radial-gradient(red 20%,black 50%);}
+  70% {background:radial-gradient(red 10%,black 40%);}
+}
+-moz- @keyframes pulse {
+  10% {background:radial-gradient(red 10%,black 40%);}
+  20% {background:radial-gradient(red 20%,black 50%);}
+  30% {background:radial-gradient(red 30%,black 60%);}
+  40% {background:radial-gradient(red 40%,black 70%);}
+  50% {background:radial-gradient(red 30%,black 60%);}
+  60% {background:radial-gradient(red 20%,black 50%);}
+  70% {background:radial-gradient(red 10%,black 40%);}
+}

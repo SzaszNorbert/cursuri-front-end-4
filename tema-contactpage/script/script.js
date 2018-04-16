@@ -23,12 +23,16 @@ function onLoaded(){
     else if (lastName.value==="") {
       lastName.style.border="1px solid red";
     }
+    else if(gender.value==="") {
+      alert("Choose a gender!!!");
+    }
     else if(content.value==="") {
-      alert("Write a comment first!!!");
+      content.style.border="1px solid red";
     }
     else {
       firstName.style.border="none";
       lastName.style.border="none";
+      content.style.border="none";
       submitForm(firstName.value,lastName.value,gender.value,content.value,greet);
     }
     

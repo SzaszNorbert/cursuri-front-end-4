@@ -20,13 +20,17 @@ function pageLoaded(){
     else if(lastName.val()==="") {
       lastName.css("border","1px solid red");
     }
+    else if(gender.val()==="") {
+      alert("Choose a gender!!!!");
+    }
     else if(content.val()==="") {
-      alert("A comment should be added!!!!");
+      content.css("border","1px solid red");
     }
     else {
       
       firstName.css("border","none");
       lastName.css("border","none");
+      content.css("border","none");
       userData(firstName.val(),lastName.val(),gender.val(),content.val(),greet);
     }
    
