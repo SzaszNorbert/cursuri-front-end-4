@@ -32,7 +32,7 @@ function getApiPost(input){
   $.ajax("https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic",{
       method:'GET',
       success:function(response){
-          console.log("The apis are:",response.drinks[2]);
+          console.log("The apis are:",response.drinks);
           var posts=document.getElementById("list-posts");
              
           for(var i=0;i<input;i++){
