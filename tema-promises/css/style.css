@@ -1,0 +1,11 @@
+
+
+.customize {
+  font-family:serif;
+  color:blue;
+  background-color:silver;
+}
+
+h2 {
+  border:1px dashed red;
+}
