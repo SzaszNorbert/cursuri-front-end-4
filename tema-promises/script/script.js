@@ -38,52 +38,6 @@ function postApiElements(posts){
   }
 }
 
-// updating element in api
-//need to ask about this part !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-function setPosts(){
-  var button=$("#set-post");
-  button.on("click",setData);
-}
-
-
-function setData(){
-  var data={
-            idIngredient:512,
-            strIngredient:'Vine',
-            strDescription:'A good alcoholic beverage',
-            strType:'Vine'
-          };
-  $.ajax({url:urlAlt,
-          method:'PUT',
-          data:data
-         })
-    .then(successUpdating)
-    .catch(failure);
-}
-
-function successUpdating(response){
-  console.log("New element:",response);
-}
-
-//delete part
-
-function delPosts(){
-  var button=$("#delete-post");
-  button.on("click",deletePost);
-}
-
-function deletePost(){
-  $.ajax({url:urlAlt,
-          method:'DELETE'})
-    .then(successDeleting)
-    .catch(failure);
-}
-
-function successDeleting(response){
-  console.log("Deleted element:",response);
-}
-
 
 
 
