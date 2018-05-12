@@ -1,4 +1,22 @@
+body {
+	background:url('../img/image13.jpg') no-repeat center fixed;
+	background-size:cover;
+	-o-background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+}
 
+.main-content {
+	width:500px;
+	height:500px;
+	background-color:rgba(0,0,0,0.5);
+	margin:0 auto;
+	margin-top:100px;
+	overflow:auto;
+	padding:8px;
+	text-align:center;
+	color:white;
+}
 
 .customize {
   font-family:serif;
@@ -6,6 +24,14 @@
   background-color:silver;
 }
 
+h1 {
+	font-style:italic;
+	font-weight:bold;
+}
+
 h2 {
-  border:1px dashed red;
+  border:1px solid gray;
+  box-shadow:3px 4px 5px rgb(20,20,20),
+  3px 4px 5px rgb(40,40,40),
+  3px 4px 5px rgb(60,60,60);
 }
