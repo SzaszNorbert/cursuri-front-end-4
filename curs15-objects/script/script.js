@@ -13,7 +13,6 @@ function onLoaded(){
 
 		makeElements(fname.value,lname.value,age.value,height.value,weight.value);
 	});
-	reseting();
 }
 
 function makeElements(fname,lname,age,height,weight){
@@ -37,7 +36,7 @@ function makeElements(fname,lname,age,height,weight){
 	}
 
 	getData.prototype.Bmi=function(){
-		bmi=this.height/(this.weight*this.weight);
+		bmi=this.weight/(this.height*this.height);
 		console.log("Persons bmi is: ",bmi);
 		var par=document.createElement('p');
 		par.classList.add("customize-p");
@@ -59,14 +58,4 @@ function makeElements(fname,lname,age,height,weight){
 	section.appendChild(article);
 
 	person.Bmi();
-}
-
-
-
-function reseting(){
-  var btn=$("#reset");
-  btn.on("click",function(){
-    $("article").remove();
-    $("p").remove();
-  })
 }
