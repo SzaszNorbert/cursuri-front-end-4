@@ -1,0 +1,16 @@
+body {
+	background:url('../img/image6.jpg') no-repeat center fixed;
+	background-size:cover;
+	-o-background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+}
+
+.main-content {
+	width:600px;
+	height:550px;
+	background:rgba(240,240,240,0.5);
+	text-align:center;
+	margin:0 auto;
+	padding:8px;
+}

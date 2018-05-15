@@ -12,15 +12,15 @@ window.onload=function(){
 
 		function createPosts(){
 			console.log(posts.itemList.length);
-			/*var containEl=document.getElementById("container");
-			for(var i=0;i<posts.items.length;i++){
-				var items=posts.items[i];//simplifying your variable
+			var containEl=document.getElementById("container");
+			for(var i=0;i<posts.itemList.length;i++){
+				var items=posts.itemList[i];//simplifying your variable
 				var postEl=document.createElement('a');
-				postEl.setAttribute('href','file:///C:/cursuri-front-end-4/curs16-workshop/pages/postDetails.html?postId=' + items.id);//?kulcs+valami igy id rendelhetunk a linkjeinkhez
+				postEl.setAttribute('href','file:///C:/cursuri-front-end-4/tema-oop/pages/gameDetails.html?gamePostId='+items._id);//?kulcs+valami igy id rendelhetunk a linkjeinkhez
 				postEl.setAttribute('target','blank');
-				postEl.innerHTML=i+' '+items.title+'<br>';
+				postEl.innerHTML=items.title+'<br>';
 				containEl.appendChild(postEl);
-			}*/
+			}
 		}
 
 		function errorMsg(xhr){
