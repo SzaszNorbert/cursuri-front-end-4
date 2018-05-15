@@ -25,14 +25,6 @@ window.onload=function(){
 			console.log(xhr);
 		}
 
-
-
-
-
-
-
-
-
 		/*** It retrieves a query (URL) parameter value** 
 		It expects you to send the parameter key(before '=')* **/
 		function getUrlParameter(name) {
@@ -41,34 +33,6 @@ window.onload=function(){
 		var results = regex.exec(location.search);
 		return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 		};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 //legyen egy comment is !!!!!!!!!!!!!!!!!!!!!!1

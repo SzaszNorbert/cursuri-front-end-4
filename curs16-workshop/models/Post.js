@@ -4,7 +4,7 @@ function Post(){
 	this.body="";
 	this.userId=null;
 }
-
+//ez kesobb lett hozzatoldva
 //ez lessz osszekapcsolva postDetailsView  oldallal
 Post.prototype.fetchData=function(id){
 	var that=this;

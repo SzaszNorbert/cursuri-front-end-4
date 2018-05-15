@@ -1,5 +1,5 @@
 window.onload=function(){
-		var posts = new PostList();
+		var posts = new GameList();
 
 		posts.fetchData()
 		.then(createPosts)
@@ -11,8 +11,8 @@ window.onload=function(){
 		//outer functions for the promise chaining
 
 		function createPosts(){
-			//console.log(posts.items.length);
-			var containEl=document.getElementById("container");
+			console.log(posts.itemList.length);
+			/*var containEl=document.getElementById("container");
 			for(var i=0;i<posts.items.length;i++){
 				var items=posts.items[i];//simplifying your variable
 				var postEl=document.createElement('a');
@@ -20,7 +20,7 @@ window.onload=function(){
 				postEl.setAttribute('target','blank');
 				postEl.innerHTML=i+' '+items.title+'<br>';
 				containEl.appendChild(postEl);
-			}
+			}*/
 		}
 
 		function errorMsg(xhr){

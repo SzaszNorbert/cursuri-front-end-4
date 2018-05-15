@@ -1,7 +1,7 @@
 function PostList(){
 	this.items=[];
 }
-
+//this is bound with postsListView.js
 PostList.prototype.fetchData=function(){
 	var that=this;
 	return $.ajax('https://jsonplaceholder.typicode.com/posts',{
@@ -27,3 +27,10 @@ PostList.prototype.fetchData=function(){
 		}
 	});
 }
+
+/* order of interaction files:1.home.html 
+2.postDetails.html
+3.PostList.js
+4.postsListView.js
+5.Post.js
+6.postDetailsView.js
