@@ -10,7 +10,7 @@ window.onload=function(){
 		//this is the view part
 		//outer functions for the promise chaining
 
-		function createPosts(){
+function createPosts(){
 			console.log(posts.itemList.length);
 			var containEl=document.getElementById("container");
 			for(var i=0;i<posts.itemList.length;i++){
@@ -22,8 +22,8 @@ window.onload=function(){
 				containEl.appendChild(postEl);
 			}
 		}
-
-		function errorMsg(xhr){
+//error function if something is messed up
+function errorMsg(xhr){
 			console.log("error",xhr)
 		}
 
