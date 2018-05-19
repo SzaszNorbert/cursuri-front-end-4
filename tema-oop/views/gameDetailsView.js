@@ -17,9 +17,13 @@ window.onload=function(){
 			//create body element
 			var postBodyEl=document.createElement('p');
 			postBodyEl.innerHTML=currentGame.description;
+
+			var imgGame=document.createElement('img');
+			imgGame.setAttribute('src',currentGame.imageUrl);
 			
 			postDetailsContainer.appendChild(postTitleEl);
 			postDetailsContainer.appendChild(postBodyEl);
+			postDetailsContainer.appendChild(imgGame);
 		}
 
 		function errorMsg(xhr){

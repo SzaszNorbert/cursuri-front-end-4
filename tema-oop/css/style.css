@@ -13,4 +13,13 @@ body {
 	text-align:center;
 	margin:0 auto;
 	padding:8px;
+	overflow:auto;
+}
+
+#list-container{
+	width:280px;
+	height:250px;
+	overflow:auto;
+	margin:0 auto;
+	margin-top:50px;
 }
