@@ -7,8 +7,8 @@ body {
 }
 
 .main-content {
-	width:600px;
-	height:550px;
+	width:900px;
+	height:750px;
 	background:rgba(240,240,240,0.5);
 	text-align:center;
 	margin:0 auto;
@@ -17,9 +17,22 @@ body {
 }
 
 #list-container{
-	width:280px;
-	height:250px;
+	width:550px;
+	height:400px;
 	overflow:auto;
 	margin:0 auto;
-	margin-top:50px;
+	margin-top:25px;
 }
+
+a {
+	text-decoration:none;
+	float:right;
+	clear:both;
+}
+
+.img-size{
+	width:200px;
+	height:200px;
+	float:left;
+}
+

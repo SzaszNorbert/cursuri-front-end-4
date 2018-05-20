@@ -5,6 +5,7 @@
 		<title>Home To Gamers</title>
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../models/postNewGame.js"></script>
 		<script type="text/javascript" src="../models/PostGames.js"></script>
 		<script type="text/javascript" src="../models/PostGameList.js"></script>
 		<script type="text/javascript" src="../views/gamesListView.js"></script>
@@ -14,6 +15,14 @@
 			<div id="list-container">
 				<div id="container"></div>
 			</div>
+			<form>
+				Title:<input type="text" name="title"><br>
+				Genre:<input type="text" name="genre"><br>
+				Publisher:<input type="text" name="publisher"><br>
+				Image:<input type="text" name="image"><br>
+				Description:<textarea name="description"></textarea><br>
+				<button type="submit" name="submit">Post Game</button>
+			</form>
 		</div>	
 	</body>
 </html>
