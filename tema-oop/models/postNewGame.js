@@ -25,7 +25,7 @@ function createNewPost(title,genre,publisher,image,description){
 		title:title,
 		genre:genre,
 		publisher:publisher,
-		image:image,
+		imageUrl:image,
 		description:description
 	};
 
