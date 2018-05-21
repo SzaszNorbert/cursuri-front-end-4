@@ -20,6 +20,7 @@ window.onload=function(){
 
 			var imgGame=document.createElement('img');
 			imgGame.setAttribute('src',currentGame.imageUrl);
+
 			
 			postDetailsContainer.appendChild(postTitleEl);
 			postDetailsContainer.appendChild(postBodyEl);

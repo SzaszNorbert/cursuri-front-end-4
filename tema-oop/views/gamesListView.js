@@ -24,8 +24,15 @@ function createPosts(){
 				postEl.setAttribute('href','file:///C:/cursuri-front-end-4/tema-oop/pages/gameDetails.html?gamePostId='+items._id);//?kulcs+valami igy id rendelhetunk a linkjeinkhez
 				postEl.setAttribute('target','blank');
 				postEl.innerHTML=items.title+'<br>';
+				var remButton=document.createElement('button');
+				remButton.setAttribute('data-id',items._id);
+				remButton.setAttribute('name','remove');
+				remButton.setAttribute('value','Remove');
+				remButton.classList.add('pull-left');
+				remButton.innerText="Remove";
 				containEl.appendChild(postEl);
 				containEl.appendChild(picture);
+				containEl.appendChild(remButton);
 			}
 		}
 //error function if something is messed up
