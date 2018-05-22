@@ -3,6 +3,8 @@
 function Game(data){
 	this._id=null;
 	this.title="";
+	this.genre="";
+	this.publisher="";
 	this.imageUrl="";
 	this.description="";
 }
@@ -31,7 +33,7 @@ Game.prototype.postNewData=function(data){
 		method:'POST',
 		data:data,
 		success:function(response){
-			console.log(response);
+			window.location.reload(true);
 		},
 		error:function(xhr){
 			console.log("An error has occured:",xhr);

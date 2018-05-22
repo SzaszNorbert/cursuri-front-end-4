@@ -82,7 +82,7 @@ function errorMsg(xhr){
 
 			dataPost.postNewData(data)
 			.then(function(){
-				alert("success");
+				console.log("success");
 			})
 			.catch(function(xhr){
 				alert("error"+xhr);
