@@ -40,3 +40,21 @@ Game.prototype.postNewData=function(data){
 		}
 	});
 }
+
+//here comes the delete method for Game() class constructor
+
+
+Game.prototype.deleteGameData=function(id){
+	var that=this;
+	return $.ajax('https://games-world.herokuapp.com/games/'+id,{
+		method:'DELETE',
+		success:function(){
+			$(that).closest('#container').fadeOut(400,function(){
+				remove();
+			});
+		},
+		error:function(xhr){
+			console.log("Error:",xhr);
+		}
+	})
+}

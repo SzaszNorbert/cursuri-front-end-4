@@ -48,6 +48,7 @@ function createPosts(){
 				remButton.setAttribute('data-id',items._id);
 				remButton.setAttribute('name','remove');
 				remButton.setAttribute('value','Remove');
+				remButton.classList.add('remove');
 				remButton.classList.add('pull-left');
 				remButton.innerText="Remove";
 				containEl.appendChild(postEl);
@@ -89,6 +90,20 @@ function errorMsg(xhr){
 			});
 
 		}	
+
+		//making the delete function
+		$('#container').delegate('.remove','click',function(){
+			var id=this.getAttribute('data-id');
+			var del=new Game();
+			del.deleteGameData(id)
+			.then(function(){
+				alert('success');
+			})
+			.catch(function(){
+				alert('Error!');
+			});
+
+		});
 
 
 }
