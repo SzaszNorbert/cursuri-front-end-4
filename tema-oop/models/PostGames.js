@@ -1,6 +1,6 @@
 //this is the class function with the object properties
 //this will be bound in the first line of GameHome.html head
-function Game(){
+function Game(data){
 	this._id=null;
 	this.title="";
 	this.imageUrl="";
@@ -24,3 +24,17 @@ Game.prototype.fetchData=function(id){
 	});
 }
 
+//here comes the posting function
+Game.prototype.postNewData=function(data){
+	var that=this;
+	return $.ajax('https://games-world.herokuapp.com/games/',{
+		method:'POST',
+		data:data,
+		success:function(response){
+			console.log(response);
+		},
+		error:function(xhr){
+			console.log("An error has occured:",xhr);
+		}
+	});
+}

@@ -1,4 +1,24 @@
 window.onload=function(){
+
+		//getting data from form input
+		var title=document.querySelector("input[name='title']");
+
+		var genre=document.querySelector("input[name='genre']");
+
+		var publisher=document.querySelector("input[name='publisher']");
+
+		var image=document.querySelector("input[name='image']");
+
+		var description=document.querySelector("[name='description']");
+
+		var form=document.querySelector("form");
+		form.addEventListener("submit",function(event){
+			event.preventDefault();
+
+			createNewPost(title.value,genre.value,publisher.value,image.value,description.value);
+		})
+
+		//listing api items via promise chaining
 		var posts = new GameList();
 
 		posts.fetchData()
@@ -39,5 +59,36 @@ function createPosts(){
 function errorMsg(xhr){
 			console.log("error",xhr)
 		}
+
+
+
+
+		//calling createNewPost
+		function createNewPost(title,genre,publisher,image,description){
+			console.log("simple value overview:",title,genre,publisher);
+
+			var data={
+				title:title,
+				genre:genre,
+				publisher:publisher,
+				imageUrl:image,
+				description:description
+				};
+
+			//console.log("data object :",data);
+
+			var dataPost=new Game();
+			//console.log("dataPost object:",dataPost);
+
+			dataPost.postNewData(data)
+			.then(function(){
+				alert("success");
+			})
+			.catch(function(xhr){
+				alert("error"+xhr);
+			});
+
+		}	
+
 
 }
