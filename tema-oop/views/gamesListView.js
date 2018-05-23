@@ -51,8 +51,8 @@ function createPosts(){
 				remButton.classList.add('remove');
 				remButton.classList.add('pull-left');
 				remButton.innerText="Remove";
-				containEl.appendChild(postEl);
 				containEl.appendChild(picture);
+				containEl.appendChild(postEl);
 				containEl.appendChild(remButton);
 			}
 		}

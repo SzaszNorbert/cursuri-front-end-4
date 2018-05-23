@@ -26,17 +26,18 @@ body {
 
 a {
 	text-decoration:none;
-	float:right;
-	clear:both;
+	float:left;
 }
 
 .img-size{
 	width:200px;
 	height:200px;
 	float:left;
+	clear:both;
 }
 
 .pull-left{
 	float:left;
+
 }
 
