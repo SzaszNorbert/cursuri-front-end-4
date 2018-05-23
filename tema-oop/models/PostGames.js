@@ -49,9 +49,23 @@ Game.prototype.deleteGameData=function(id){
 	return $.ajax('https://games-world.herokuapp.com/games/'+id,{
 		method:'DELETE',
 		success:function(){
-			$(that).closest('#container').fadeOut(400,function(){
-				remove();
-			});
+			window.location.reload(true);
+		},
+		error:function(xhr){
+			console.log("Error:",xhr);
+		}
+	})
+}
+
+//here comes the update function for Gmae class with ajax put method
+
+Game.prototype.updateGameData=function(id,data){
+	var that=this;
+	return $.ajax('https://games-world.herokuapp.com/games/'+id,{
+		method:'PUT',
+		data:data,
+		success:function(){
+			window.location.reload(true);
 		},
 		error:function(xhr){
 			console.log("Error:",xhr);

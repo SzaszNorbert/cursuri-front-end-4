@@ -1,7 +1,11 @@
 window.onload=function(){
+	var titleGame=document.querySelector("input[name='title-input']");
+	var descriptionGame=document.querySelector("[name='description-input']");
+	var imageGame=document.querySelector("input[name='img-input']");
+
 	var currentGame=new Game();
-		var currentPostId=getUrlParameter('gamePostId');
-		console.log(currentPostId);
+	var currentPostId=getUrlParameter('gamePostId');
+	console.log(currentPostId);
 
 		currentGame.fetchData(currentPostId)
 		.then(createDetails)
@@ -17,7 +21,7 @@ window.onload=function(){
 			//create body element
 			var postBodyEl=document.createElement('p');
 			postBodyEl.innerHTML=currentGame.description;
-
+			//create img element
 			var imgGame=document.createElement('img');
 			imgGame.setAttribute('src',currentGame.imageUrl);
 
@@ -25,11 +29,43 @@ window.onload=function(){
 			postDetailsContainer.appendChild(postTitleEl);
 			postDetailsContainer.appendChild(postBodyEl);
 			postDetailsContainer.appendChild(imgGame);
+
+			
 		}
 
 		function errorMsg(xhr){
 			console.log('Something happened:',xhr);
 		}
+		//select the data for updating
+
+		var editButton=document.getElementById("edit-data");
+			editButton.addEventListener("click",function(event){
+				event.preventDefault();
+				titleGame.value=currentGame.title;
+				descriptionGame.value=currentGame.description;
+				imageGame.value=currentGame.imageUrl;
+			});
+
+		//here comes the actual update function !!!
+
+			var updateButton=document.getElementById('save-edit');
+			updateButton.addEventListener("click",function(event){
+				event.preventDefault();
+				var id=getUrlParameter('gamePostId');
+				console.log(id);
+				var gameTitle=document.querySelector("input[name='title-input']");
+				var gameDescription=document.querySelector("[name='description-input']");
+				var gameImg=document.querySelector("input[name='img-input']");
+				var data={
+					title:gameTitle.value,
+					description:gameDescription.value,
+					imageUrl:gameImg.value
+				};
+				console.log(data);
+				var updateGame=new Game();
+				updateGame.updateGameData(id,data);
+
+			});
 
 
 		/*** It retrieves a query (URL) parameter value** 
