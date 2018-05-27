@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -10,10 +11,49 @@
 		<script type="text/javascript" src="../views/gamesListView.js"></script>
 	</head>
 	<body>
+		<header class="header-content">
+			<img src="../img/head-image.jpg" class="pull-left">
+			<h1 class="pull-right">Welcome to a home of Gaming</h1>
+		</header>
 		<div class="main-content">
-			<div id="list-container">
-				<div id="container"></div>
+			<!-- About Game list container-->
+			<div class="about-container clearfix">
+				<h2>About This Page:</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
+			<!-- Game list container-->
+			<div id="list-container" class="clearfix">
+				<!--list container-->
+				<div id="container" class="pull-left"></div>
+				<!-- other list container-->
+				<div class="other-content pull-right">
+				<h3>Here are some other sites for gamers:</h3>
+				<ul>
+				<li><a href="https://www.pcgamer.com/best-pc-games/" target="_blank">PC Gamer</a></li>
+				<li><a href="https://www.gamespot.com/gallery/biggest-pc-games-to-play-in-2018/2900-1701/" target="_blank">Gamespot</a></li>
+				<li><a href="http://www.metacritic.com/browse/games/score/metascore/year/pc/filtered" target="_blank">Metacritic</a></li>
+				<li><a href="http://www.trustedreviews.com/guide/best-pc-games" target="_blank">Trusted Reviews</a></li>
+				</ul>
+				</div>
+			</div>
+			<!-- Post Game list container-->
 			<form>
 				Title:<input type="text" name="title"><br>
 				Genre:<input type="text" name="genre"><br>
@@ -23,5 +63,8 @@
 				<button type="submit" name="submit">Post Game</button>
 			</form>
 		</div>	
+		<footer class="footer-content">
+			<p>Copyright &copy; of Game-World 2018</p>
+		</footer>
 	</body>
 </html>
