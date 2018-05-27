@@ -20,6 +20,9 @@ body {
 	font-family:verdana;
 	font-style:italic;
 	margin-right:50px;
+	margin-top:30px;
+	text-shadow:2px 3px 4px white,
+	2px 3px 4px lightgray;
 }
 
 .header-content img{
@@ -29,14 +32,6 @@ body {
 }
 
 /*main content*/
-
-.about-container{
-	width:850px;
-	height:500px;
-	text-align:center;
-	margin:0 auto;
-	border-bottom:grey 3px solid;
-}
 
 
 .main-content {
@@ -48,6 +43,30 @@ body {
 	padding:8px;
 }
 
+/*about content*/
+
+.about-container{
+	width:850px;
+	height:500px;
+	text-align:center;
+	margin:0 auto;
+	border-bottom:grey 3px solid;
+}
+
+.about-container h2{
+	font-family:verdana;
+	font-style:italic;
+	margin-top:50px;
+	text-shadow:2px 3px 4px gray,
+	2px 3px 4px black;
+}
+
+.about-container p{
+	font-family:verdana;
+}
+
+/*list containig lists*/
+
 #list-container{
 	width:850px;
 	height:350px;
@@ -56,10 +75,22 @@ body {
 	margin-top:25px;
 	border-bottom:grey 3px solid;
 }
+/*actual game list*/
+#container{
+	width:550px;
+	height:340px;
+	background:rgba(200,200,200,0.5);
+	overflow:auto;
+}
 
-a {
+#container a {
 	text-decoration:none;
 	float:left;
+	margin-top:100px;
+}
+
+#container .remove{
+	margin-top:100px;
 }
 
 .img-size{
@@ -68,21 +99,56 @@ a {
 	float:left;
 	clear:both;
 }
-
+/*other content*/
 .other-content{
 	width:200px;
 	height:200px;
 	background:rgba(200,200,200,0.5);
-	overflow:auto;
+	overflow:hidden;
 	margin:0 auto;
+	text-align:center;
 }
 
-ul{
+.other-content ul{
 	list-style-type:none;
+	margin:0;
+	padding:0;
 }
+
+.other-content li {
+	padding-bottom:5px;
+	border-bottom:1px dotted grey;
+}
+
 li a{
+	text-decoration:none;
 	float:none;
 }
+
+/*contain detail*/
+
+#contain-detail img{
+	max-width:700px;
+	max-height:650px;
+}
+
+/*styling links*/
+
+li a:link{
+	color:green;
+}
+li a:visited{
+	color:blue;
+}
+li a:hover{
+	color:red;
+	font-weight:bold;
+	font-size:18px;
+}
+li a:active{
+	color:green;
+}
+
 /*position content*/
 .pull-left{
 	float:left;
