@@ -132,6 +132,18 @@ li a{
 	max-height:650px;
 }
 
+#contain-detail h3{
+	font-family:verdana;
+	font-style:italic;
+	margin-top:50px;
+	text-shadow:2px 3px 4px gray,
+	2px 3px 4px black;
+}
+
+#contain-detail p{
+	font-family:sans-serif;
+}
+
 /*styling links*/
 
 li a:link{
