@@ -37,15 +37,15 @@ function onLoaded(){
 	localStorage.setItem("promotionData",JSON.stringify(arrObj));
 
 	//read
-	const promoData=localStorage.getItem("promotionData");
+	const data=localStorage.getItem("promotionData");
 	//parse
-	const promoDataObj=JSON.parse(promoData);
+	const promoData=JSON.parse(data);
 
 	let contain=document.getElementById("container");
 	//parse obj
-	for(let i=0;i<promoDataObj.length;i++){
+	for(let i=0;i<promoData.length;i++){
 		//console.log(promoDataObj[i]);
-		let item=promoDataObj[i];
+		let item=promoData[i];
 		let elemTitle=document.createElement("h1");
 		elemTitle.innerHTML=item.name+"<br>";
 
@@ -59,25 +59,29 @@ function onLoaded(){
 
 		let updButton=document.createElement('button');
 		updButton.setAttribute('data-id',item.id);
-		updButton.setAttribute('name','submit');
-		updButton.setAttribute('value','Buy');
-		updButton.classList.add('buy');
 		updButton.innerText="Buy";
 
 		container.appendChild(elemTitle);
 		container.appendChild(elemPicture);
 		container.appendChild(elemQuan);
 		container.appendChild(updButton);
-	}
 
-	//buy but
-	$('data-id').on('click',(event)=>{
-		event.preventDefault();
-		promoDataObj.quantity-=1;
-		localStorage.setItem("promoData",JSON.stringify(promoDataObj));
 
-		console.log(promoDataObj);
 
-	});
+
+
+
+			//buy but
+		let buyButton=document.querySelector('[data-id="' + item.id + '"]');
+		buyButton.addEventListener('click',()=>{
+           	//alert(item.id);
+			item.quantity-=1;
+			alert(item.id +"And quantity is:"+item.quantity)
+			localStorage.setItem("promoData",JSON.stringify(item));
+
+			console.log(item);
+
+		});
+		}
 
 }
