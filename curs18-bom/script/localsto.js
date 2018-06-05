@@ -77,7 +77,7 @@ function onLoaded(){
            	//alert(item.id);
 			item.quantity-=1;
 			alert(item.id +"And quantity is:"+item.quantity)
-			localStorage.setItem("promoData",JSON.stringify(item));
+			localStorage.setItem("promotionData",JSON.stringify(promoData));
 
 			console.log(item);
 
