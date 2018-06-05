@@ -24,7 +24,7 @@ function onLoaded(){
 	let sta=document.getElementById("rep-obj");
 	let sto=document.getElementById("stop-obj");
 
-	let Inter
+	let Inter;
 	sta.addEventListener("click",function(event){
 		event.preventDefault();
 		Inter=setInterval(function (){
@@ -50,6 +50,9 @@ function onLoaded(){
 	
 	//history object model
 	console.log(history.length);
-	console.log(history.state);   
+	console.log(history.state); 
+	
+	
+	  
 
 }
