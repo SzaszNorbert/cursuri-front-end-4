@@ -58,7 +58,7 @@ function displayWeather(response){
 
 function getcookie(){
   const disp=document.querySelectorAll("input[name='user-preference']");
-      let parDisp=document.getElementById("display-weather");
+  let parDisp=document.getElementById("display-weather");
   const cookieItem={};
   const cookiesString = document.cookie;
   const separatedEntries=cookiesString.split(";");
