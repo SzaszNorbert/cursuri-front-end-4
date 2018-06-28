@@ -11,9 +11,9 @@ header {
 }
 
 .headcontainer {
-
 	width:80%;
 	margin:0 auto;
+	padding:0 5px 0 5px;
 	display:flex;
 	justify-content:space-between;
 
@@ -68,3 +68,68 @@ nav {
 	text-decoration:none;
 	color:rgb(37,87,237);
 }
+
+/*motivation section*/
+
+#presentation{
+	width:100%;
+	min-height:300px;
+	background:url('../img/motpic.jpg') no-repeat 0 -100px;
+	background-size:cover;
+	-o-background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
+#presentation h2{
+	color:white;
+	font-family:verdana;
+	font-size:35px;
+}
+
+#presentation p{
+	color:white;
+	font-family:times new roman;
+	font-size:20px;
+}
+
+/*motto section*/
+
+.personal-motto-back{
+	width:100%;
+	background-color:rgb(82,85,88);
+}
+
+.personal-motto{
+	padding:0 10px 0 10px;
+	display:flex;
+	justify-content:space-around;
+}
+
+.personal-motto h3{
+	color:rgb(194,152,42);
+	font-family:arial;
+}
+
+.personal-motto p{
+	color:white;
+	font-family:times new roman;
+	font-style:italic;
+	font-weight:bold;
+	align-self:center;
+}
+
+/*footer section*/
+
+footer{
+	width:100%;
+	background-color:rgb(194,152,42);
+	display:flex;
+	justify-content:center;
+	color:rgb(72,15,200);
+}
+
