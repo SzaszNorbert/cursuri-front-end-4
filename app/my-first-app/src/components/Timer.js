@@ -1,24 +1,39 @@
 import React, { Component } from 'react';
 class Timer extends Component{
-	constructor(){
+
+	constructor(props){
 		super(props);
 		//only set this .state here
 		//use setstate for all other cases
 		this.state={
-			date:new Date()
+			date:new Date().toLocaleTimeString()
 		};
 	}
-
-
-	tick(){
-			this.setState({date:new Date()});
+	componentWillMount(){
+		console.log("here");
+		this.timerInterval=setInterval(()=>{
+			this.setState({
+				date:new Date().toLocaleTimeString()
+			});
+		}, 1000);
 	}
 
+	componentDidMount(){
+		console.log("here,after");
+	}
+
+	componentWillUnmount(){
+		clearInterval(this.timerInterval);
+	}
 	render(){
 		return (
-		<p>{this.props.label}: {this.tick()}</p>
+		<p>
+		<span>{this.props.label}</span>
+		<span>{this.state.date}</span>
+		</p>
 		);
 	}
+
 }
 
 /*function Timer(props){

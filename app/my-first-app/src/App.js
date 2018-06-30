@@ -7,10 +7,9 @@ class App extends Component {
     const name="Norbi";
 
     return (
-      <div>
+      <div className="App">
         <h1>My first app-{name}</h1>
-        <Timer label="Date and time"/>
-        <Timer label="What!!!!!"/>
+        <Timer label="Date and time: "/>
       </div>
     );
   }

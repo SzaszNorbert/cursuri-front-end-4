@@ -74,7 +74,7 @@ nav {
 #presentation{
 	width:100%;
 	min-height:300px;
-	background:url('../img/motpic.jpg') no-repeat 0 -100px;
+	background:url('../img/motpic.jpg') no-repeat bottom fixed;
 	background-size:cover;
 	-o-background-size:cover;
 	-moz-background-size:cover;
