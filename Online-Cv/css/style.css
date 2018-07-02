@@ -28,7 +28,7 @@ header {
 }
 
 .headcontainer h1{
-	font-family:courier;
+	font-family:arial;
 	font-style:italic;
 	text-shadow:2px 3px 4px gray,
 		2px 3px 4px darkgray;
@@ -87,7 +87,7 @@ nav {
 
 #presentation h2{
 	color:white;
-	font-family:verdana;
+	font-family:arial;
 	font-size:35px;
 }
 
@@ -123,6 +123,36 @@ nav {
 	align-self:center;
 }
 
+/* skills section */
+
+#pers-skills{
+	text-align:center;
+}
+
+#pers-skills h2{
+	width:100%;
+}
+
+
+#pers-skills img{
+	max-width:290px;
+	max-height:170px;
+}
+
+/* online cv part*/
+#cv-info{
+	text-align:center;
+}
+
+#cv-info ul{
+	list-style-type:none;
+}
+
+#cv-info img{
+	max-width:50%;
+	max-height:auto;
+}
+
 /*footer section*/
 
 footer{
@@ -132,4 +162,6 @@ footer{
 	justify-content:center;
 	color:rgb(72,15,200);
 }
+
+
 
