@@ -25,6 +25,8 @@ header {
 	border:2px solid lightblue;
 	border-radius:50%;
 	align-self:center;
+	object-fit: cover;
+  	object-position: center right;
 }
 
 .headcontainer h1{
@@ -152,6 +154,20 @@ nav {
 	max-width:50%;
 	max-height:auto;
 }
+
+#prof-exp{
+	align-self:center;
+}
+
+#skills{
+	align-self:center;
+}
+
+
+
+/*shof off section*/
+
+
 
 /*footer section*/
 
