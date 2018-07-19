@@ -1,5 +1,5 @@
 body {
-	background-color:lightgray;
+	background-color:lightblue;
 	margin:0;
 	padding:0;
 	box-sizing:border-box;
@@ -157,16 +157,60 @@ nav {
 
 #prof-exp{
 	align-self:center;
+
 }
 
 #skills{
 	align-self:center;
 }
 
+#skills h2{
+	font-family:arial;
+	font-style:italic;
+	text-shadow:2px 3px 4px gray,
+		2px 3px 4px darkgray;
+}
 
+#skills h2::first-letter{
+	font-family:arial;
+	font-style:italic;
+	color:red;
+	font-size:45px;
+	font-style:italic;
+	text-shadow:2px 3px 4px red,
+		2px 3px 4px tomato;
+}
+
+#main-skills li{
+	border-bottom:1px dotted tomato;
+}
 
 /*shof off section*/
 
+#intro-part{
+	width:100%;
+	text-align:center;
+	font-family:times new roman;
+	font-style:italic;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+#intro-part h2::first-letter{
+	font-size:45px;
+	color:red;
+}
+
+#slider{
+	max-width:80%;
+	height:auto;
+	margin:0 auto;
+}
+
+.item img{
+	max-width:100%;
+	height:auto;
+}
 
 
 /*footer section*/
