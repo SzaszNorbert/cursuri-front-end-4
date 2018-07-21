@@ -233,7 +233,7 @@ nav {
 	margin-bottom:5%;
 	overflow:hidden;
 	background-color:rgb(62,65,68);
-	opacity:0.9;
+	opacity:0.8;
 }
 
 .carousel-caption h3{
@@ -244,7 +244,6 @@ nav {
 
 .carousel-caption a{
 	text-decoration:none;
-	color:red;
 	font-family:times new roman;
 	font-weight:bold;
 	font-style:italic;
@@ -253,6 +252,14 @@ nav {
 
 .carousel-caption button{
 	background-color:rgb(194,152,42);
+	border:none;
+	color:white;
+	text-align:center;
+	margin-bottom:1%;
+}
+
+.carousel-caption button:hover{
+	background-color:rgb(214,172,62);
 	border:none;
 	color:white;
 	text-align:center;
@@ -273,5 +280,113 @@ footer{
 	color:rgb(72,15,200);
 }
 
+/* breakpoint section*/
+
+/*breakpoint for carousel under 621 pixels*/
+
+@media only screen and (max-width:621px){
+
+	.carousel-caption h3{
+	color:white;
+	font-family:times new roman;
+	font-weight:normal;
+	font-size:18px;
+	}
+	.carousel-caption a{
+	text-decoration:none;
+	font-family:times new roman;
+	font-weight:normal;
+	font-style:italic;
+	font-size:18px;
+	}
+}
 
 
+/*breakpoint for carousel under 480 pixels*/
+
+@media only screen and (max-width:480px){
+
+	#slider{
+	max-width:90%;
+	height:auto;
+	}
+
+	.carousel-caption button{
+	margin:1%;
+	}
+
+	.carousel-caption a{
+	text-decoration:none;
+	font-family:times new roman;
+	font-weight:normal;
+	font-style:italic;
+	font-size:15px;
+	}
+}
+
+/*breakpoint for carousel under 421 pixels*/
+
+@media only screen and (max-width:421px){
+
+	.carousel-caption h3{
+	color:white;
+	font-family:times new roman;
+	font-weight:normal;
+	font-size:13px;
+	}
+	.carousel-caption a{
+	text-decoration:none;
+	font-family:times new roman;
+	font-weight:normal;
+	font-style:italic;
+	font-size:15px;
+	}
+}
+
+
+/*breakpoint for carousel under 361 pixels*/
+
+@media only screen and (max-width:361px){
+
+	#slider{
+	max-width:100%;
+	height:auto;
+	}
+
+	.carousel-caption h3{
+		display:none;
+	}
+
+	.carousel-caption a{
+	text-decoration:none;
+	font-family:times new roman;
+	font-weight:normal;
+	font-style:italic;
+	font-size:15px;
+	}
+}
+
+/* breakpoint for carousel under 321 pixels*/
+
+@media only screen and (max-width:321px){
+
+	#slider{
+	max-width:100%;
+	height:auto;
+	}
+
+	.carousel-caption .inner-content{
+	width:30%;
+	margin:0 auto;
+	margin-bottom:5%;
+	overflow:hidden;
+	background-color:rgb(62,65,68);
+	opacity:1;
+	}
+
+	.carousel-caption button{
+	margin:1%;
+	width:100%;
+	}
+
+}
