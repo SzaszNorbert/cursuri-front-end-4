@@ -276,7 +276,7 @@ footer{
 
 /* breakpoint section*/
 
-/*breakpoint for header section under 310 pixels*/
+/*breakpoint for header section under 315 pixels*/
 
 @media only screen and (max-width:315px){
 
@@ -320,7 +320,7 @@ footer{
 
 }
 
-/*breakpoint for motto section under 420 pixels*/
+/*breakpoint for motto section under 720 pixels*/
 
 @media only screen and (max-width:720px){
 
