@@ -168,20 +168,9 @@ nav {
 
 #skills h2{
 	font-family:arial;
-	font-style:italic;
-	text-shadow:2px 3px 4px gray,
-		2px 3px 4px darkgray;
 }
 
-#skills h2::first-letter{
-	font-family:arial;
-	font-style:italic;
-	color:red;
-	font-size:45px;
-	font-style:italic;
-	text-shadow:2px 3px 4px red,
-		2px 3px 4px tomato;
-}
+
 
 #main-skills li{
 	border-bottom:1px dotted tomato;
@@ -265,6 +254,11 @@ nav {
 	text-align:center;
 	margin-bottom:1%;
 }
+
+#small-button{
+	display:none;
+}
+
 
 
 /*footer section*/
@@ -375,18 +369,97 @@ footer{
 	height:auto;
 	}
 
-	.carousel-caption .inner-content{
-	width:30%;
-	margin:0 auto;
-	margin-bottom:5%;
-	overflow:hidden;
-	background-color:rgb(62,65,68);
-	opacity:1;
+	.carousel-caption {
+		display:none;
 	}
 
-	.carousel-caption button{
-	margin:1%;
+	#small-button{
+	display:block;
 	width:100%;
+	text-align:center;
+	}
+
+	#small-button p{
+		font-size:15px;
+	}
+
+	#round-button{
+		background-color:rgb(194,152,42);
+		border:none;
+		width:40px;
+		height:40px;
+		border-radius:50%;
+	}
+
+	#round-button:hover{
+		background-color:rgb(224,182,72);
+		border:none;
+		width:40px;
+		height:40px;
+		border-radius:50%;
+	}
+}
+
+/*breakpoint for skills logo under 800 pixels*/
+@media only screen and (max-width:800px){
+
+	#pers-skills img{
+	max-width:260px;
+	max-height:140px;
+	}
+
+}
+
+/*breakpoint for motivation section under 770 pixels*/
+
+@media only screen and (max-width:770px){
+
+	#presentation{
+		text-align:center;
+	}
+
+}
+
+/*breakpoint for motto section under 420 pixels*/
+
+@media only screen and (max-width:666px){
+
+	.personal-motto{
+		display:block;
+		text-align:center;
+	}
+
+}
+
+/*breakpoint for header section under 310 pixels*/
+
+@media only screen and (max-width:311px){
+
+	.headcontainer {
+	display:block;
+	height:100%;
+	text-align:center;
+	}
+
+	.headcontainer img{
+		display:none;
+	}
+
+}
+
+/*breakpoint for navbar under 500 pixels*/
+
+@media only screen and (max-width:500px){
+
+	nav{
+		border-bottom:2px solid rgb(194,152,42);
+	}
+
+	.navcontainer{
+	width:80%;
+	margin:0 auto;
+	display:flex;
+	justify-content:center;
 	}
 
 }
