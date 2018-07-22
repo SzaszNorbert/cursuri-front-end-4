@@ -276,6 +276,71 @@ footer{
 
 /* breakpoint section*/
 
+/*breakpoint for header section under 310 pixels*/
+
+@media only screen and (max-width:315px){
+
+	.headcontainer {
+	display:block;
+	height:100%;
+	text-align:center;
+	padding-bottom:5px;
+	}
+
+	.headcontainer img{
+		display:none;
+	}
+
+}
+
+/*breakpoint for navbar under 500 pixels*/
+
+@media only screen and (max-width:500px){
+
+	nav{
+		border-bottom:2px solid rgb(194,152,42);
+	}
+
+	.navcontainer{
+	width:80%;
+	margin:0 auto;
+	display:flex;
+	justify-content:center;
+	}
+
+}
+
+/*breakpoint for motivation section under 770 pixels*/
+
+@media only screen and (max-width:770px){
+
+	#presentation{
+		text-align:center;
+	}
+
+}
+
+/*breakpoint for motto section under 420 pixels*/
+
+@media only screen and (max-width:666px){
+
+	.personal-motto{
+		display:block;
+		text-align:center;
+	}
+
+}
+
+/*breakpoint for skills logo under 800 pixels*/
+@media only screen and (max-width:800px){
+
+	#pers-skills img{
+	max-width:260px;
+	max-height:140px;
+	}
+
+}
+
 /*breakpoint for carousel under 621 pixels*/
 
 @media only screen and (max-width:621px){
@@ -398,68 +463,4 @@ footer{
 		height:40px;
 		border-radius:50%;
 	}
-}
-
-/*breakpoint for skills logo under 800 pixels*/
-@media only screen and (max-width:800px){
-
-	#pers-skills img{
-	max-width:260px;
-	max-height:140px;
-	}
-
-}
-
-/*breakpoint for motivation section under 770 pixels*/
-
-@media only screen and (max-width:770px){
-
-	#presentation{
-		text-align:center;
-	}
-
-}
-
-/*breakpoint for motto section under 420 pixels*/
-
-@media only screen and (max-width:666px){
-
-	.personal-motto{
-		display:block;
-		text-align:center;
-	}
-
-}
-
-/*breakpoint for header section under 310 pixels*/
-
-@media only screen and (max-width:311px){
-
-	.headcontainer {
-	display:block;
-	height:100%;
-	text-align:center;
-	}
-
-	.headcontainer img{
-		display:none;
-	}
-
-}
-
-/*breakpoint for navbar under 500 pixels*/
-
-@media only screen and (max-width:500px){
-
-	nav{
-		border-bottom:2px solid rgb(194,152,42);
-	}
-
-	.navcontainer{
-	width:80%;
-	margin:0 auto;
-	display:flex;
-	justify-content:center;
-	}
-
 }
