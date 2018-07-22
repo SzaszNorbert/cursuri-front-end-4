@@ -322,7 +322,7 @@ footer{
 
 /*breakpoint for motto section under 420 pixels*/
 
-@media only screen and (max-width:666px){
+@media only screen and (max-width:720px){
 
 	.personal-motto{
 		display:block;
