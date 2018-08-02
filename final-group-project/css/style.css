@@ -1,0 +1,123 @@
+body {
+    background: url("https://cdn.pixabay.com/photo/2016/09/16/00/15/white-1673016_960_720.jpg") no-repeat center fixed;
+    background-size: cover;
+    padding-bottom: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 3%;
+}
+
+.center-contain{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+#navbar-submit-button {
+    border: 0px;
+    background-color: #E6C422;
+}
+#searchBarInput {
+    border: 0px;
+}
+.movie-shadow, #myList {
+    border: 0px;
+    background-color: #E6C422;
+    border-radius: 4px;
+    margin: 0 0.5%;
+    box-shadow: 12px 10px 22px black;
+}
+.movie-shadow:hover {
+    box-shadow: 7px 6px 12px black;
+}
+.movie-shadow:active {
+    box-shadow: 2px 2px 8px black;
+}
+
+#imdbicon {
+    width:75px;
+    height: 55px;
+}
+
+#searchBar {
+    padding: 2%;
+    width: 80%;
+    height:70px;
+}
+
+#searchBar span{S
+    margin:0 2.5px;
+}
+
+#searchBarInput {
+    width: 45%;
+}
+
+#buttons {
+    padding: 2%;
+}
+
+.img-size{
+    width:22%;
+    height:auto;
+    padding-top: 10px;
+}
+.movieImg {
+    max-width: 300px;
+    float: left;
+    clear: right;
+    margin-right: 10px;
+}
+
+.movieDetailsContainer{
+    overflow:auto;
+}
+footer {
+    
+    left: 0;
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    background-color: #E6C422;
+    position: fixed;
+    bottom: 0px; 
+}
+.movieBox{
+    box-shadow: black 12px 10px 22px;
+    display: inline-block;
+    margin: 10px;
+    max-width: 45%;
+}
+.movieBox h3 {
+    text-shadow: black 12px 10px 20px;
+}
+.remove {
+    box-shadow: black 12px 10px 22px;
+    border: 0px;
+}
+.remove:hover {
+    box-shadow: 7px 6px 12px black;
+}
+.remove:active {
+    box-shadow: 2px 2px 8px black;
+}
+
+
+/* pagination */
+#pagination a {
+    color: black;
+    float: left;
+    padding: 1px 3px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+#pagination a.active {
+    background-color: #e6c422;
+}
+
+#pagination a:hover:not(.active) {background-color: #ddd;}
+
+.hiddenBtn {
+    visibility: hidden;
+}
