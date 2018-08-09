@@ -10,7 +10,7 @@ class Movies {
 		return $.ajax('https://ancient-caverns-16784.herokuapp.com/movies?take=10&skip=' + number, {
 			method:'GET',
 			success:(response)=>{
-				this.itemList = [];
+				this.itemList=[];
 				console.log("get response",response);
 				for(let i=0;i<response.results.length;i++){
 					const item=response.results[i];
