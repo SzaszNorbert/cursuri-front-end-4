@@ -4,6 +4,8 @@
 	<head>
 		<title>HomePage</title>
 		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../style/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript" src="../models/Games.js"></script>
 		<script type="text/javascript" src="../models/ListOfGames.js"></script>
@@ -12,23 +14,69 @@
 	</head>
 
 	<body>
-		<header></header>
+		<header>
+			<section>
+				<img src="../img/icon.png" alt="icon">
+				<h1>A fortress of solitude for gamers</h1>
+			</section>
+		</header>
 
 		<main>
-			<article id="elemetContainer"></article>
+			<section id="site-intro">
+				<p>We didn't choose to be gamers,this life chose us!</p>
+				<p>See our offers <a href="#elemetContainer">down</a> below.</p>
+			</section>
+
+			<section id="content-part">
+				<ul>
+					<li class="active">
+						<button>About</button>
+						<section>
+							<h2>Content1</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet lacinia aliquam. Proin aliquet, nibh sed pellentesque gravida, lacus tortor porta felis, eget dignissim tellus ipsum vitae ligula. Suspendisse lobortis neque a pulvinar tristique. Aliquam ultrices dolor ut auctor condimentum. Nullam nec nibh dui. Fusce viverra bibendum cursus. Vivamus facilisis suscipit elit eu dictum. Nunc tincidunt, magna sit amet malesuada sagittis, erat enim cursus arcu, ac laoreet libero purus vitae neque. Vivamus id tristique turpis. Aenean et gravida sapien, nec tristique sem. Donec non pharetra massa, vitae faucibus massa</p>
+							<h2>Content2</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet lacinia aliquam. Proin aliquet, nibh sed pellentesque gravida, lacus tortor porta felis, eget dignissim tellus ipsum vitae ligula. Suspendisse lobortis neque a pulvinar tristique.</p>
+							<h2>Content3</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet lacinia aliquam. Proin aliquet, nibh sed pellentesque gravida, lacus tortor porta felis, eget dignissim tellus ipsum vitae ligula. Suspendisse lobortis neque a pulvinar tristique.</p>
+							<h2>Content4</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet lacinia aliquam. Proin aliquet, nibh sed pellentesque gravida, lacus tortor porta felis, eget dignissim tellus ipsum vitae ligula. Suspendisse lobortis neque a pulvinar tristique. Aliquam ultrices dolor ut auctor condimentum. Nullam nec nibh dui. Fusce viverra bibendum cursus. Vivamus facilisis suscipit elit eu dictum. Nunc tincidunt, magna sit amet malesuada sagittis, erat enim cursus arcu, ac laoreet libero purus vitae neque. Vivamus id tristique turpis.</p>
+						</section>
+					</li>
+					<li>
+						<button>Offer</button>
+						<section>
+							<h2>Contentios1</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet lacinia aliquam. Proin aliquet, nibh sed pellentesque gravida, lacus tortor porta felis, eget dignissim tellus ipsum vitae ligula. Suspendisse lobortis neque a pulvinar tristique. Aliquam ultrices dolor ut auctor condimentum. Nullam nec nibh dui. Fusce viverra bibendum cursus. Vivamus facilisis suscipit elit eu dictum. Nunc tincidunt, magna sit amet malesuada sagittis, erat enim cursus arcu, ac laoreet libero purus vitae neque. Vivamus id tristique turpis. Aenean et gravida sapien, nec tristique sem. Donec non pharetra massa, vitae faucibus massa</p>
+							<h2>Content2</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet lacinia aliquam. Proin aliquet, nibh sed pellentesque gravida, lacus tortor porta felis, eget dignissim tellus ipsum vitae ligula. Suspendisse lobortis neque a pulvinar tristique.</p>
+							<h2>Content3</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet lacinia aliquam. Proin aliquet, nibh sed pellentesque gravida, lacus tortor porta felis, eget dignissim tellus ipsum vitae ligula. Suspendisse lobortis neque a pulvinar tristique. Aliquam ultrices dolor ut auctor condimentum. Nullam nec nibh dui. Fusce viverra bibendum cursus. Vivamus facilisis suscipit elit eu dictum. Nunc tincidunt, magna sit amet malesuada sagittis, erat enim cursus arcu, ac laoreet libero purus vitae neque. Vivamus id tristique turpis.</p>
+						</section>
+					</li>
+				</ul>
+			<section>
 
 			<section>
+				<article id="elemetContainer"></article>
+			</section>
+
+			<section>
+				<button type="submit" name="show-form">Post</button>
 				<form>
 					Title:<input type="text" name="title" placeholder="Title..."><br>
 					Image:<input type="text" name="image" placeholder="Image..."><br>
 					Description:<textarea name="description"></textarea><br>
 					Publisher:<input type="text" name="publisher" placeholder="Publisher..."><br>
 					Genre:<input type="text" name="genre" placeholder="Genre..."><br>
-					<button type="submit" name="addMovie">Post Game</button>
+					<button type="submit" name="addMovie">Save Game</button>
+					<button type="submiy" name="hide-form">Cancel</button>
 				</form>
 			</section>
 		</main>
 
-		<footer></footer>
+		<footer>
+			<div></div>
+			<p> &copy 2018 Game-Hub.All Rights Reserved.Made by R...</p>
+		</footer>
 	</body>
 </html>

@@ -2,6 +2,17 @@ window.onload=onLoaded;
 
 function onLoaded(){
 
+
+	//make content change onclick
+	const button=$('#content-part ul li');
+	button.on('click',function(){
+		//$('li').addClass('active').siblings().removeClass('active');
+		$(this).siblings().removeClass('active');
+		$(this).addClass('active');
+	});
+
+	//main functionalities
+
 	const gameTitle=document.querySelector("input[name='title']");
 	const gameImage=document.querySelector("input[name='image']");
 	const gameDescription=document.querySelector("[name='description']");
@@ -76,4 +87,7 @@ function onLoaded(){
 		const deleteGame=new Game();
 		deleteGame.deleteGame(id);
 	});
+
+
+	
 }
