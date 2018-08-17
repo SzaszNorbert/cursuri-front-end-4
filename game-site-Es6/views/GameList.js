@@ -4,11 +4,16 @@ function onLoaded(){
 
 
 	//make content change onclick
-	const button=$('#content-part ul li');
-	button.on('click',function(){
-		//$('li').addClass('active').siblings().removeClass('active');
-		$(this).siblings().removeClass('active');
-		$(this).addClass('active');
+	const buttonAbout=$('#about');
+	const buttonOffer=$('#offer');
+	buttonAbout.on('click',function(){
+		$('#about-content').removeClass('display-none').addClass('display-active');
+		$('#offer-content').removeClass('display-active').addClass('display-none');
+	});
+
+	buttonOffer.on('click',function(){
+		$('#offer-content').removeClass('display-none').addClass('display-active');
+		$('#about-content').removeClass('display-active').addClass('display-none');
 	});
 
 	//main functionalities
@@ -42,11 +47,15 @@ function onLoaded(){
 		//console.log(gameEl);
 		const posts=document.createElement("div");
 
+		posts.setAttribute("class","col-xs-12 col-sm-6 col-md-4 col-lg-4");
+
 		posts.innerHTML="<a href="+basepath+"pages/DetailsPage.html?gameId="+
 		gameEl._id+" target='_self'>"+
 		"<img src="+gameEl.imageUrl+">"+"</a>"+
 		"<h2>"+gameEl.title+"</h2>"+
 		"<button data-id="+gameEl._id+" name='remove' class='remove'>Delete</button>";
+
+
 
 		elementContainer.appendChild(posts);
 		}
@@ -56,6 +65,21 @@ function onLoaded(){
 		console.log(xhr);
 	}
 
+	//show/hide post part
+
+	const postButton=$("#show-form");
+	const hideButton=$("#hide-form");
+	
+	postButton.on('click',function(event){
+		event.preventDefault();
+		$(this).removeClass('display-active').addClass('display-none');
+		$('#game-form').removeClass('display-none').addClass('display-active');
+	});
+	hideButton.on('click',function(event){
+		event.preventDefault();
+		$('#game-form').removeClass('display-active').addClass('display-none');
+		$('#show-form').removeClass('display-none').addClass('display-active');
+	});
 	//post new game
 
 	function createGame(title,image,description,publisher,genre){
