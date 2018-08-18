@@ -3,6 +3,11 @@ body {
 	padding:0;
 	box-sizing:border-box;
 	font-family:times new roman;
+	background:url('../img/back-image.jpg') no-repeat center fixed;
+	background-size:cover;
+	-o-background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
 }
 
 /* clearfix*/
@@ -54,7 +59,8 @@ header section h1 {
 #site-intro {
 	width:100%;
 	min-height:400px;
-	background:url('../img/intro-image.jpg') no-repeat bottom fixed;
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+	url('../img/intro-image.jpg') no-repeat bottom fixed;
 	background-size:cover;
 	-o-background-size:cover;
 	-moz-background-size:cover;
@@ -89,6 +95,10 @@ header section h1 {
 	letter-spacing:1px;
 }
 
+#activation-part button:hover{
+	background:rgb(162,62,42);
+}
+
 .display-info{
 	background-color:lightgrey;
 	padding:3px 6px;
@@ -114,14 +124,33 @@ header section h1 {
 
 #allElements div{
 	width:300px;
+	height:350px;
 	border:1px solid black;
 	padding:1px;
 	text-align:center;
+	margin-bottom:3px;
 }
 
 #allElements div img{
 	max-width:50%;
 	height:auto
+}
+
+#allElements div button{
+	background:rgb(22,42,62);
+	border:none;
+	color:rgb(240,240,240);
+	box-shadow:4px 5px 6px rgb(10,10,10);
+	border-radius:7px;
+}
+
+#allElements div button:hover{
+	background:rgb(162,62,42);
+}
+
+#allElements div button:active{
+	background:rgb(182,82,62);
+	box-shadow:2px 3px 4px rgb(10,10,10);
 }
 
 /*diplay the post part */
@@ -133,7 +162,6 @@ header section h1 {
 	flex-direction:column;
 	justify-content:center;
 	align-items:center;
-	background-color:lightgrey;
 }
 
 #show-form{
@@ -142,6 +170,17 @@ header section h1 {
 	padding:3px;
 	width:70px;
 	color:lightgrey;
+	box-shadow:4px 5px 6px rgb(10,10,10);
+	border-radius:7px;
+}
+
+#show-form:hover{
+	background:rgb(162,62,42);
+}
+
+#show-form:active{
+	background:rgb(182,82,62);
+	box-shadow:2px 3px 4px rgb(10,10,10);
 }
 
 #game-form{
@@ -150,6 +189,17 @@ header section h1 {
 	color:lightgrey;
 	border:2px solid rgb(62,42,22);
 	text-align:center;
+	box-shadow:3px 5px 6px rgb(10,10,10);
+}
+
+#game-form button{
+	background:rgb(162,62,42);
+	border:none;
+	color:rgb(240,240,240);
+}
+
+#game-form button:hover{
+	background:rgb(182,82,62);
 }
 
 
@@ -157,12 +207,76 @@ header section h1 {
 
 #detailContainer{
 	width:100%;
-	height:650px;
+	height:700px;
 	padding:4px 8px;
 	display:flex;
 	flex-direction:column;
 	align-items:center;
 	justify;content:center;
+	background-color:rgb(200,200,200);
+}
+
+#detailContainer h2{
+	font-weight:bold;
+}
+
+#detailContainer img{
+	max-width:50%;
+	height:auto;
+	margin:9px;
+}
+
+#detailContainer p{
+	line-height:20px;
+}
+
+/*update section for games*/
+
+#update-game-section{
+	width:100%;
+	height:500px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
+#update-game{
+	background:rgb(22,42,62);
+	border:none;
+	padding:3px;
+	width:70px;
+	color:lightgrey;
+	box-shadow:4px 5px 6px rgb(10,10,10);
+	border-radius:7px;
+}
+
+#update-game:hover{
+	background:rgb(162,62,42);
+}
+
+#update-game:active{
+	background:rgb(182,82,62);
+	box-shadow:2px 3px 4px rgb(10,10,10);
+}
+
+#submitNewElement{
+	background:rgb(22,42,62);
+	padding:3px;
+	color:lightgrey;
+	border:2px solid rgb(62,42,22);
+	text-align:center;
+	box-shadow:3px 5px 6px rgb(10,10,10);
+}
+
+#submitNewElement button{
+	background:rgb(162,62,42);
+	border:none;
+	color:rgb(240,240,240);
+}
+
+#submitNewElement button:hover{
+	background:rgb(182,82,62);
 }
 
 /*footer section*/

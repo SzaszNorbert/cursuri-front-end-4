@@ -48,6 +48,21 @@ function onLoaded(){
 			console.log(xhr);
 		}
 
+		//show/hide update section
+
+		updateButton=$('#update-game');
+		cancelButton=$('#cancel-update');
+
+		updateButton.on('click',function(event){
+			event.preventDefault();
+			$(this).removeClass('display-active').addClass('display-none');
+			$('#submitNewElement').removeClass('display-none').addClass('display-active');
+		});
+		cancelButton.on('click',function(event){
+			event.preventDefault();
+			$('#submitNewElement').removeClass('display-active').addClass('display-none');
+			$('#update-game').removeClass('display-none').addClass('display-active');
+		});
 
 		//update an existing game
 

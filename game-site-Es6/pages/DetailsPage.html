@@ -24,8 +24,9 @@
 
 			<section id="detailContainer"></section>
 
-			<section>
-				<form id="submitNewElement">
+			<section id="update-game-section">
+				<button type="submit" name="update-game" id="update-game" class="display-active">Update</button>
+				<form id="submitNewElement" class="display-none">
 					Title:<input type="text" name="title" placeholder="Title..."><br>
 					Image<input type="text" name="image" placeholder="Image..."><br>
 					Description<textarea name="description"></textarea><br>
@@ -33,6 +34,7 @@
 					Genre<input type="text" name="genre" placeholder="Genre..."><br>
 					<button type="submit" name="submit" id="gameEdit">Edit</button>
 					<button type="submit" name="submit" id="gameSave">Save</button>
+					<button type="submit" name="cancel-update" id="cancel-update">Cancel</button>
 				</form>
 			</section>
 		</main>
