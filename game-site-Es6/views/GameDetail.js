@@ -30,10 +30,10 @@ function onLoaded(){
 			descEl.innerHTML=postDetails.description;
 
 			const genEl=document.createElement("p");
-			genEl.innerHTML=postDetails.genre;
+			genEl.innerHTML="Genre: "+postDetails.genre;
 
 			const pubEl=document.createElement("p");
-			pubEl.innerHTML=postDetails.publisher;
+			pubEl.innerHTML="Publisher: "+postDetails.publisher;
 
 			containEl.appendChild(titleEl);
 			containEl.appendChild(imgEl);
