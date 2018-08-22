@@ -7,11 +7,15 @@ function onLoaded(){
 	const buttonAbout=$('#about');
 	const buttonOffer=$('#offer');
 	buttonAbout.on('click',function(){
+		$(this).addClass('button-active');
+		$('#offer').removeClass('button-active');
 		$('#about-content').removeClass('display-none').addClass('display-active');
 		$('#offer-content').removeClass('display-active').addClass('display-none');
 	});
 
 	buttonOffer.on('click',function(){
+		$(this).addClass('button-active');
+		$('#about').removeClass('button-active');
 		$('#offer-content').removeClass('display-none').addClass('display-active');
 		$('#about-content').removeClass('display-active').addClass('display-none');
 	});

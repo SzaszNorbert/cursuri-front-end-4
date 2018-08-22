@@ -28,6 +28,10 @@ body {
 	display:block;
 }
 
+#activation-part button.button-active {
+	background:rgb(152,52,32);
+}
+
 /* header section*/
 
 header {
@@ -104,6 +108,8 @@ header section h1 {
 #activation-part button:hover{
 	background:rgb(162,62,42);
 }
+
+
 
 .display-info{
 	background-color:lightgrey;
