@@ -65,6 +65,10 @@ header p{
 	color:rgb(245,245,245);
 }
 
+#subtitle-1 h2{
+		padding-left:15px;
+}
+
 /*column content comes here*/
 
 #main-section{
@@ -77,6 +81,17 @@ header p{
 	height:480px;
 	box-shadow:2px 3px 4px gray;
 	margin-bottom:6px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+
+}
+
+#info-section article h2{
+	align-self:flex-start;
+	border-bottom:1px solid black;
 }
 
 #info-section article img{
@@ -91,9 +106,10 @@ header p{
 	justify-content:center;
 	align-items:center;
 	text-align:center;
+	font-style:italic;
 }
 
-#sample-section p{
+#sample-section h3{
 	margin:0;
 }
 
@@ -116,6 +132,10 @@ header p{
 	background:rgb(102,32,12);
 	color:rgb(245,245,245);
 	margin-top:10px;
+}
+
+#subtitle-2 h2{
+	padding-left:15px;
 }
 
 /* carousel section */
@@ -157,4 +177,124 @@ header p{
 #creator-section p{
 	font-style:italic;
 	margin:0;
+}
+
+/*breakpoint section*/
+
+/*breakpoint for nvigation section */
+
+@media only screen and (max-width:350px){
+	.navigation-menu{
+		width:90%;
+		justify-content:flex-start;
+		align-items:center;
+	}
+
+	.navigation-menu a{
+		padding-right:6px;
+	}
+}
+
+/*breakpoint for intro section*/
+
+@media only screen and (max-width:971px){
+	header{
+		background:url('../img/orig2.jpg') no-repeat center fixed;
+		background-size:cover;
+		-o-background-size:cover;
+		-moz-background-size:cover;
+		-webkit-background-size:cover;
+	}
+	header h1{
+		color:rgb(30,30,30);
+	}
+
+	header p{
+		color:rgb(30,30,30);
+	}
+}
+
+@media only screen and (max-width:620px){
+	header{
+		background:url('../img/orig3.jpg') no-repeat center fixed;
+		background-size:cover;
+		-o-background-size:cover;
+		-moz-background-size:cover;
+		-webkit-background-size:cover;
+	}
+	header h1{
+		color:rgb(30,30,30);
+	}
+
+	header p{
+		color:rgb(30,30,30);
+	}
+}
+
+/* breakpoint for first subtitles section*/
+
+@media only screen and (max-width:620px){
+	#subtitle-1 h2{
+		padding-left:5px;
+		font-size:23px;
+	}
+}
+
+@media only screen and (max-width:370px){
+	#subtitle-1{
+		text-align:center;
+	}
+	#subtitle-1 h2{
+		padding-left:5px;
+		font-size:18px;
+	}
+}
+
+@media only screen and (max-width:620px){
+	#subtitle-2 h2{
+		padding-left:5px;
+		font-size:23px;
+	}
+}
+
+@media only screen and (max-width:370px){
+	#subtitle-2{
+		text-align:center;
+	}
+	#subtitle-2 h2{
+		padding-left:5px;
+		font-size:18px;
+	}
+}
+
+/*breakpoint for sample section*/
+
+@media only screen and (max-width:370px){
+	#sample-section h3{
+		font-size:20px;
+	}
+}
+
+/*breakpoint for quote section*/
+
+@media only screen and (max-width:620px){
+	#quote-section{
+		align-items:center;
+	}
+
+	#quote-section blockquote p{
+		font-size:15px;
+	}
+	#quote-section blockquote footer{
+		font-size:15px;
+	}
+}
+
+
+/*breakpoint for footer*/
+
+@media only screen and (max-width:370px){
+	#creator-section p{
+		font-size:13px;
+	}
 }
