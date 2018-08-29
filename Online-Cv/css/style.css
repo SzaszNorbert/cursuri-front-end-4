@@ -221,8 +221,8 @@ nav {
 	margin:0 auto;
 	margin-bottom:5%;
 	overflow:hidden;
-	background-color:rgb(62,65,68);
-	opacity:0.8;
+	background:rgba(62,65,68,0.8);
+	
 }
 
 .carousel-caption h3{
