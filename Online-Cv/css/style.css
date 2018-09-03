@@ -343,7 +343,7 @@ footer{
 
 /*breakpoint for carousel under 621 pixels*/
 
-@media only screen and (max-width:621px){
+@media only screen and (max-width:731px){
 
 	.carousel-caption h3{
 	color:white;
