@@ -41,7 +41,7 @@ function createPosts(){
 				picture.setAttribute('alt','404');
 				picture.classList.add('img-size');
 				var postEl=document.createElement('a');
-				postEl.setAttribute('href',basepath+'pages/gameDetails.html?gamePostId='+items._id);//?kulcs+valami igy id rendelhetunk a linkjeinkhez
+				postEl.setAttribute('href','../pages/gameDetails.html?gamePostId='+items._id);//?kulcs+valami igy id rendelhetunk a linkjeinkhez
 				postEl.setAttribute('target','blank');
 				postEl.innerHTML=items.title+'<br>';
 				var remButton=document.createElement('button');

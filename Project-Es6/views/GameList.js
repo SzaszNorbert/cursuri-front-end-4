@@ -53,7 +53,7 @@ function onLoaded(){
 
 		posts.setAttribute("class","col-xs-12 col-sm-6 col-md-4 col-lg-4");
 
-		posts.innerHTML="<a href="+basepath+"pages/DetailsPage.html?gameId="+
+		posts.innerHTML="<a href=../pages/DetailsPage.html?gameId="+
 		gameEl._id+" target='_self'>"+
 		"<img src="+gameEl.imageUrl+">"+"</a>"+
 		"<h2>"+gameEl.title+"</h2>"+

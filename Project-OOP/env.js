@@ -1,1 +1,0 @@
-const basepath="file:///C:/cursuri-front-end-4/Project-OOP/";
