@@ -1,0 +1,1 @@
+const basepath="file:///C:/cursuri-front-end-4/tema-oop/";
