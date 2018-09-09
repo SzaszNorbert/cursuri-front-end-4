@@ -18,21 +18,21 @@ function onLoaded(){
     event.preventDefault();
     
     if(firstName.value==="") {
-      firstName.style.border="1px solid red";
+      firstName.classList.add("border-red-style");
     }
     else if (lastName.value==="") {
-      lastName.style.border="1px solid red";
+      lastName.classList.add("border-red-style");
     }
     else if(gender.value==="") {
       alert("Choose a gender!!!");
     }
     else if(content.value==="") {
-      content.style.border="1px solid red";
+      content.classList.add("border-red-style");
     }
     else {
-      firstName.style.border="none";
-      lastName.style.border="none";
-      content.style.border="none";
+      firstName.classList.remove("border-red-style");
+      lastName.classList.remove("border-red-style");
+      content.classList.remove("border-red-style");
       submitForm(firstName.value,lastName.value,gender.value,content.value,greet);
     }
     

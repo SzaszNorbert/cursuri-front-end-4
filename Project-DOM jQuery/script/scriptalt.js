@@ -15,22 +15,22 @@ function pageLoaded(){
     event.preventDefault();
     
     if(firstName.val()==="") {
-      firstName.css("border","1px solid red");
+      firstName.addClass('border-red-style');
     }
     else if(lastName.val()==="") {
-      lastName.css("border","1px solid red");
+      lastName.addClass('border-red-style');
     }
-    else if(gender.val()==="") {
+    else if(gender.checked == false) {
       alert("Choose a gender!!!!");
     }
     else if(content.val()==="") {
-      content.css("border","1px solid red");
+      content.addClass('border-red-style');
     }
     else {
       
-      firstName.css("border","none");
-      lastName.css("border","none");
-      content.css("border","none");
+      firstName.removeClass('border-red-style');
+      lastName.removeClass('border-red-style');
+      content.removeClass('border-red-style');
       userData(firstName.val(),lastName.val(),gender.val(),content.val(),greet);
     }
    
